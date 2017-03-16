@@ -1,0 +1,17 @@
+<h1>Have a look at all the restaurants!</h1>
+
+<ul class="list">
+<% @restaurants.each do |restaurant| %>
+  <li>
+    <p>
+      Restaurant:
+      <%= restaurant.name %>
+      <br>
+      Address: <%= restaurant.address %>
+      Phone number: <%= restaurant.phone_number %>
+      <br>
+      Category: <%= restaurant.category %>
+    </p>
+  </li>
+<% end %>
+</ul>
